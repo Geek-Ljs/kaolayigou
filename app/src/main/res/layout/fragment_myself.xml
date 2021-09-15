@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".ui.fragment.myself.MyselfFragment">
+
+    <!--    在其他kotlin文件引用此TextView ID-->
+    <TextView
+        android:id="@+id/text_myself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user" />
+    <!--    图片填充属性-->
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/image_head"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="点击登录"
+
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_personalized_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/text_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:maxWidth="200dp"
+        android:maxLines="1"
+        android:text="It's a wonderful application "
+        android:textColor="#E2E2E2"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:id="@+id/myself_cart_one"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_below="@+id/text_personalized_signature"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_bg_form">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="待付款"
+                android:textColor="#222222"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_delivery"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待发货"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#222222"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/myself_wait_receive_goods"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_receive" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="待收货"
+                android:textColor="#222222"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_comments"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#222222"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="18dp"
+            >
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_resource_return"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退款售后"
+                android:textSize="10sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#222222"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myself_cart_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myself_cart_one"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_bg_form">
+
+        <LinearLayout
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="18dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_address"
+                android:layout_marginRight="24dp"/>
+
+            <Button
+                android:id="@+id/myself_address"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:text="地址"
+                android:gravity="top"
+                android:background="#00000000"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="18dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_collect"
+                android:layout_marginRight="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="收藏"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_set"
+                android:layout_marginRight="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:text="设置"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myself_cart_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myself_cart_two"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_bg_form">
+
+
+        <LinearLayout
+            android:id="@+id/myself_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_out"
+                android:layout_marginRight="24dp"/>
+
+            <Button
+                android:id="@+id/myself_switch_account_or_exit"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:text="退出登录"
+                android:gravity="top"
+                android:background="#00000000"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

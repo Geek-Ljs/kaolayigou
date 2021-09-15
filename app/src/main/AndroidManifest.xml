@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shoppingmail">
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> -->
+    <!-- 允许互联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+<!--    增加储存卡的读写和相机的调用权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /><!-- 储存卡的读权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 储存卡的写权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /><!-- 调用相机权限 -->
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_big"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TestCountDown"/>
+        <activity android:name=".OrderComfirmToCartActivity" />
+        <activity android:name=".AddAddressActivity" />
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".StartPageActivity"
+            android:theme="@style/SplashActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InitAdvActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".ComfirmOrderActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".AddressActivity" />
+        <activity android:name=".GoodsDetailActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".PasswordLoginActivity" />
+        <activity android:name=".RecommendActivity" />
+        <activity android:name=".kaolahaigou" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 兼容Android7.0拍照闪退 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.shoppingmail"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

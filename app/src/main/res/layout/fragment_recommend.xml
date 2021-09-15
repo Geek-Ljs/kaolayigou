@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.recommend.RecommendFragment">
+
+    <LinearLayout
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/ic_taolbar"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/logo"
+            android:layout_width="42dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_logo_small"
+            android:layout_gravity="center_vertical"
+            />
+
+        <SearchView
+            android:id="@+id/main_search_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:queryBackground="@drawable/rounded_search"
+            android:inputType="text"
+            android:queryHint="请输入搜索内容"
+            android:background="@drawable/rounded_search"
+            />
+
+        <ImageButton
+            android:id="@+id/inform"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_message"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/home_recyclerview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_below="@id/home_toolbar"-->
+<!--        />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_recyc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_below="@+id/home_toolbar"/>
+
+</RelativeLayout>

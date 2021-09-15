@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/splash3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic3"
+        android:layout_marginBottom="120dp"
+        />
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"
+
+        android:background="@drawable/rounded_button5"
+        android:text="Enter"
+        android:textColor="#FF002A"
+        android:textSize="14sp"
+        android:layout_marginTop="730dp"
+     />
+
+</RelativeLayout>

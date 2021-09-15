@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.message.MessageFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/message_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        app:contentInsetStart="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="#222222"
+                android:textSize="@dimen/textSize_22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="18dp"
+                android:text="管理"
+                android:textColor="#222222"
+                android:textSize="@dimen/textSize_16sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/message_toolbar"
+        android:background="#FFFFFF">
+
+
+        <ImageView
+            android:id="@+id/message_image"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/message_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="180dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Jason"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            app:layout_constraintWidth_default="wrap"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@id/message_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/message_messages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Fast to go，don't be afraid"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:layout_constraintWidth_default="wrap"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@id/message_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="11:30"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bottom_fun"
+        android:layout_below="@+id/cart_toolbar" />
+
+
+</RelativeLayout>

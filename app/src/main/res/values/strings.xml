@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">考拉易购</string>
+    <string name="title_recommend">title_recommend</string>
+    <string name="title_message">title_message</string>
+    <string name="title_cart">title_cart</string>
+    <string name="title_myself">title_myself</string>
+</resources>

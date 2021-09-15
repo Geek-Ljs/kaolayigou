@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/submit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        app:contentInsetStart="18dp">
+
+        <ImageButton
+            android:id="@+id/order_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_close_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认订单"
+            android:textColor="#222222"
+            android:textSize="@dimen/textSize_22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="36dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/submit_adress"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/submit_toolbar"
+        android:layout_marginTop="14dp"
+        android:background="#FFFFFF">
+
+        <ImageButton
+            android:id="@+id/submit_location"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/submit_to_address"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/ic_to"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/submit_adress_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="18dp"
+            android:text="收件人："
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/submit_location"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        android:text="Jason"-->
+        <TextView
+            android:id="@+id/submit_adress_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="18dp"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/submit_adress_people"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        android:text="123123123"-->
+        <TextView
+            android:id="@+id/submit_adress_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="18dp"
+            android:textColor="#6c6c6c"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/submit_adress_name"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/submit_adress_adr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginBottom="18dp"
+            android:text="地址："
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/submit_location"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+<!--        android:text="123123123asdad"-->
+        <TextView
+            android:id="@+id/submit_adress_adress"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="18dp"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/submit_adress_adr"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_comfirm_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_adress"
+        android:layout_marginTop="8dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_fun"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        >
+
+
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计:"
+            android:textColor="#222222"
+            android:layout_marginRight="8dp"
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintRight_toLeftOf="@id/moneyTextView1"
+            app:layout_constraintTop_toTopOf="@+id/moneyTextView1"
+            app:layout_constraintBottom_toBottomOf="@id/moneyTextView1" />
+        <TextView
+            android:id="@+id/moneyTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:text="¥"
+            android:textColor="#FF002A"
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintRight_toLeftOf="@id/moneyTextView2"
+            app:layout_constraintTop_toTopOf="@+id/moneyTextView2"
+            app:layout_constraintBottom_toBottomOf="@id/moneyTextView2"/>
+
+        <TextView
+            android:id="@+id/moneyTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="0"
+            android:textColor="#FF002A"
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintRight_toLeftOf="@id/submitButton"
+            app:layout_constraintTop_toTopOf="@+id/submitButton"
+            app:layout_constraintBottom_toBottomOf="@id/submitButton"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="@dimen/space_96dp"
+            android:layout_height="@dimen/space_42dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/rounded_total_btn"
+            android:stateListAnimator="@null"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

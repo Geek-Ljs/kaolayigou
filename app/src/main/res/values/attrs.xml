@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="indicator">
+        <attr name="normalColor" format="color" />
+        <attr name="selectedColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TimerButton">
+        <attr name="duration" format="integer"/>
+        <attr name="interval" format="integer"/>
+    </declare-styleable>
+</resources>

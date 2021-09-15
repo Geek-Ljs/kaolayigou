@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_waterfall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_button4">
+
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/goods_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/banner_one"
+        app:cornerRadius="8dp"
+        app:roundedCorners="topLeft|topRight"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/goods_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#222222"
+        android:text="小米小米大家说大家开大了看傻傻的卡就是打卡机三大课"
+        app:layout_constraintTop_toBottomOf="@+id/goods_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/goods_price"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/goods_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#FF002A"
+        android:text="¥"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FF002A"
+        android:text="1299"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/goods_rmb"
+        />
+    <TextView
+        android:id="@+id/goods_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="#6c6c6c"
+        android:text="1232销售"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

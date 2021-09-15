@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/submit_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="#FFFFFF">
+
+
+        <ImageView
+            android:id="@+id/submit_image"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/submit_goodsname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="14dp"
+            app:layout_constraintWidth_default="wrap"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="asdadadadasdasdadadabbbnnnnnnnnbbbbb"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@id/submit_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/submit_goodsname"
+            app:layout_constraintLeft_toRightOf="@id/submit_image"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:text="aasdasdadad"
+            android:textColor="#6c6c6c"
+            android:textSize="10sp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/submit_text_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="6dp"
+            android:text="￥"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/submit_image"
+            app:layout_constraintLeft_toRightOf="@id/submit_image"
+            />
+        <TextView
+            android:id="@+id/order_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="199"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/submit_image"
+            app:layout_constraintLeft_toRightOf="@id/submit_text_rmb"
+            />
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x1"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            android:layout_marginRight="18dp"
+
+            app:layout_constraintBottom_toBottomOf="@id/submit_image"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/submit_information_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:text="配送方式"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/submit_image"/>
+        <TextView
+            android:id="@+id/submit_information_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="普通配送"
+            android:textColor="#6c6c6c"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/submit_information_p1"
+            app:layout_constraintTop_toTopOf="@id/submit_information_p1"/>
+        <TextView
+            android:id="@+id/submit_information_p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:text="快递 免邮"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/submit_information_p1"/>
+        <TextView
+            android:id="@+id/submit_information_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="配送时间   付款后48小时内发货"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/submit_information_p1"
+            app:layout_constraintTop_toBottomOf="@id/submit_information_p1"/>
+        <TextView
+            android:id="@+id/submit_information_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="发票类型"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/submit_information_p4"
+            app:layout_constraintTop_toBottomOf="@id/submit_information_p4"/>
+        <TextView
+            android:id="@+id/submit_information_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人电子发票"
+            android:layout_marginRight="18dp"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/submit_information_f1"/>
+        <TextView
+            android:id="@+id/submit_information_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="留言"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/submit_information_f1"
+            app:layout_constraintTop_toBottomOf="@id/submit_information_f1"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/submit_information_l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="18dp"
+            android:text="选填，请与商家协调一致"
+            android:textColor="#6C6C6C"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/submit_information_l1"
+            app:layout_constraintTop_toTopOf="@id/submit_information_l1"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/submit_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_below="@id/submit_information"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/submit_discount_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:text="优惠卷"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/submit_discount_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无可用"
+            android:layout_marginRight="18dp"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/submit_discount_1"/>
+        <TextView
+            android:id="@+id/submit_discount_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="其他费用（运费）"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/submit_discount_1"
+            app:layout_constraintLeft_toLeftOf="@id/submit_discount_1"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/submit_discount_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            android:text="¥ 0"
+            android:textColor="#6C6C6C"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/submit_discount_3"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

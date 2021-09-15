@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/navigation_recommend"
+        android:icon="@drawable/icon_recommend"
+        android:title="推荐"
+
+        />
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/icon_messages"
+        android:title="消息"
+        />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/icon_carts"
+        android:title="购物车"
+        />
+
+    <item
+        android:id="@+id/navigation_myself"
+        android:icon="@drawable/icon_myself"
+        android:title="我的"
+        />
+  =
+</menu>

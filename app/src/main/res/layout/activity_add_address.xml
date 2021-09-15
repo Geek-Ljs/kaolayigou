@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAddressActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_address_control"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff">
+
+        <ImageButton
+            android:id="@+id/add_address_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_back_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="120dp"
+            android:gravity="center"
+            android:text="添加收货地址"
+            android:textColor="#222222"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/add_address_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_address_control"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="收货人" />
+
+            <EditText
+                android:id="@+id/add_address_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_16sp"
+                android:hint="  名字"
+                android:maxLines="1"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="手机号码" />
+
+            <EditText
+                android:id="@+id/add_address_telephone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize_16sp"
+                android:hint="  手机号码"
+                android:maxLines="1"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="详细地址" />
+
+            <EditText
+                android:id="@+id/add_address_addr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/textSize_16sp"
+                android:layout_weight="1"
+                android:hint="  地址"
+                android:maxLines="1"
+                android:layout_margin="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_address_store"
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/add_address_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/rounded_button"/>
+
+</RelativeLayout>

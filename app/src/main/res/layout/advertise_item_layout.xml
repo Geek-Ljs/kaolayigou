@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragment.recommend.RecommendFragment"
+    android:id="@+id/advertesment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/classification"
+    android:layout_marginTop="18dp">
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/ad_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/bac1"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="179:207"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ad_right_top"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ic_text1"
+        app:layout_constraintLeft_toLeftOf="@+id/ad_left"
+        app:layout_constraintTop_toTopOf="@+id/ad_left"/>
+    <ImageView
+        android:id="@+id/ad_left_image"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/adv_1"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintLeft_toLeftOf="@+id/ad_left"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ad_left"/>
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/ad_right_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/bac2"
+        app:cornerRadius="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="179:94"
+        app:layout_constraintLeft_toRightOf="@id/ad_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_text2"
+        app:layout_constraintRight_toRightOf="@+id/ad_right_top"
+        app:layout_constraintTop_toTopOf="@+id/ad_right_top"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/adv_5"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="@+id/ad_right_top"
+        app:layout_constraintBottom_toBottomOf="@+id/ad_right_top"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/adv_3"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="@+id/ad_right_top"
+        app:layout_constraintBottom_toBottomOf="@+id/ad_right_top"/>
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/ad_right_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="16dp"
+        app:cornerRadius="10dp"
+        android:src="@drawable/bac2"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintDimensionRatio="179:94"
+
+        app:layout_constraintLeft_toRightOf="@id/ad_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ad_right_top" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_text3"
+        app:layout_constraintRight_toRightOf="@+id/ad_right_bottom"
+        app:layout_constraintTop_toTopOf="@+id/ad_right_bottom"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/adv_4"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="@+id/ad_right_bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/ad_right_bottom"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/adv_2"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="@+id/ad_right_bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/ad_right_bottom"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="56dp"
+    android:height="56dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+  <path
+      android:pathData="M47,17.71c-1.48,-4.45 0.5,-5.93 0.5,-5.93 -7.44,-4.45 -14.39,0 -17.37,3.46s-6,5.94 -8.93,5.44c-10.38,-1.72 -7.45,4 -6.94,4.84h0a6.54,6.54 0,0 0,0.14 4.13L10.23,38 15,40.73l4.42,-6.68A23.35,23.35 0,0 0,36.18 34l4.49,6.78L45.42,38 41,29.25a6.62,6.62 0,0 0,0.19 -2.94h0c0,-0.39 0.44,-0.9 1.15,-0.35a4.59,4.59 0,0 0,4.63 0.66C48.53,25.88 48.5,22.17 47,17.71Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="39.1075"
+          android:startX="41.4062"
+          android:endY="8.4672985"
+          android:endX="17.123999"
+          android:type="linear">
+        <item android:offset="0" android:color="#FFFD811F"/>
+        <item android:offset="0.73" android:color="#FFFFC759"/>
+        <item android:offset="0.89" android:color="#FFFFD767"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M42.54,18.48m-1.24,0a1.24,1.24 0,1 1,2.48 0a1.24,1.24 0,1 1,-2.48 0"
+      android:fillColor="#ffe8cf"/>
+  <path
+      android:pathData="M47.51,11.78c-7,-4.2 -13.61,-0.47 -16.83,2.87 6.34,-6.41 15.49,-1 16,1.85h0C45.89,13 47.51,11.78 47.51,11.78Z">
+  </path>
+  <path
+      android:pathData="M28,48.09a34.67,34.67 0,0 1,-7.9 -0.93A35.12,35.12 0,0 1,8.31 42a3.21,3.21 0,0 1,-0.68 -4.5,3.25 3.25,0 0,1 4.51,-0.68c0.63,0.46 15.19,10.77 31.49,-0.08a3.24,3.24 0,0 1,4.48 0.89,3.2 3.2,0 0,1 -0.9,4.46 34.12,34.12 0,0 1,-19.21 6Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="42.092308"
+          android:startX="8.29076"
+          android:endY="42.092308"
+          android:endX="61.452667"
+          android:type="linear">
+        <item android:offset="0" android:color="#FFFDB541"/>
+        <item android:offset="0.89" android:color="#FFFE8B55"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

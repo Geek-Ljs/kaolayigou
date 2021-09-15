@@ -1,0 +1,360 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/details_view"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:background="#000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_one"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 4299-7168"
+            android:textSize="26sp"
+            android:textColor="#ff002A"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="9dp"
+            app:layout_constraintTop_toBottomOf="@id/details_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/details_banner"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_control"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000">
+
+        <ImageButton
+            android:id="@+id/details_icon_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_back_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/details_icon_more"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_more"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/details_banner"
+        >
+        <TextView
+            android:id="@+id/details_information_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="56dp"
+            app:layout_constraintWidth_default="wrap"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="asdadadadabbb"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_information_introduce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="56dp"
+
+            app:layout_constraintWidth_default="wrap"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="asdadadadnnbbbbb"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/details_information"
+            app:layout_constraintTop_toBottomOf="@id/details_information_title" />
+
+        <ImageButton
+            android:id="@+id/details_icon_collection"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_collect"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_chose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_below="@id/details_information"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/details_chose_chose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:text="选择"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@id/details_chose"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:id="@+id/details_chose_have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:text="已选"
+            android:textSize="12sp"
+            android:textColor="#222222"
+
+            app:layout_constraintTop_toTopOf="@id/details_chose"
+            app:layout_constraintLeft_toRightOf="@id/details_chose_chose"
+            />
+        <TextView
+            android:id="@+id/details_chose_another"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:text="8+128G 素皮紫"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@id/details_chose"
+            app:layout_constraintLeft_toRightOf="@id/details_chose_have"
+            />
+        <ImageButton
+            android:id="@+id/details_icon_tochose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_to"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/details_chose_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintTop_toBottomOf="@id/details_chose_have"
+            app:layout_constraintLeft_toLeftOf="@id/details_chose_have"
+            app:layout_constraintBottom_toBottomOf="@id/details_chose"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/space_56dp"
+                android:layout_height="@dimen/space_56dp"
+                android:background="@drawable/a9"
+                android:layout_marginRight="12dp"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/space_56dp"
+                android:layout_height="@dimen/space_56dp"
+                android:background="@drawable/a92"
+                android:layout_marginRight="12dp"
+                />
+            <ImageView
+                android:layout_width="@dimen/space_56dp"
+                android:layout_height="@dimen/space_56dp"
+                android:background="@drawable/a93"
+                android:layout_marginRight="12dp"
+                />
+            <ImageView
+                android:layout_width="@dimen/space_56dp"
+                android:layout_height="@dimen/space_56dp"
+                android:background="@drawable/a94"
+                android:layout_marginRight="12dp"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_below="@id/details_chose"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/details_delivery_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:text="送至"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@id/details_delivery"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <Spinner
+            android:id="@+id/details_delivery_address"
+            android:layout_width="160dp"
+            android:layout_height="16dp"
+
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:background="#FFFFFF"
+            android:textColor="#222222"
+            app:layout_constraintTop_toTopOf="@id/details_delivery"
+            app:layout_constraintLeft_toRightOf="@id/details_delivery_delivery"
+            />
+        <TextView
+            android:id="@+id/details_delivery_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:text="有货"
+            android:textSize="12sp"
+            android:textColor="#FF002A"
+            app:layout_constraintTop_toTopOf="@id/details_delivery"
+            app:layout_constraintLeft_toRightOf="@id/details_delivery_address"
+            />
+        <TextView
+            android:id="@+id/details_delivery_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:text="考拉转送   七天无理由退货"
+            android:textSize="10sp"
+            android:textColor="#6c6c6c"
+            app:layout_constraintTop_toBottomOf="@id/details_delivery_address"
+            app:layout_constraintLeft_toLeftOf="@id/details_delivery_address"
+            app:layout_constraintBottom_toBottomOf="@id/details_delivery"
+            />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/details_delivery_tochose"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginTop="14dp"-->
+<!--            android:layout_marginRight="18dp"-->
+<!--            android:background="@drawable/ic_to"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/details_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/details_picture"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/details_delivery"
+        android:layout_marginTop="8dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/details_account"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <ImageButton
+            android:id="@+id/details_account_account"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_service"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/details_account_purchase"
+            android:layout_width="128dp"
+            android:layout_height="@dimen/space_42dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/rounded_total_btn"
+            android:stateListAnimator="@null"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Button
+            android:id="@+id/details_account_addcarts"
+            android:layout_width="144dp"
+            android:layout_height="@dimen/space_42dp"
+            android:background="@drawable/rounded_total_btn2"
+            android:layout_marginRight="6dp"
+            android:stateListAnimator="@null"
+            android:text="加入购物车"
+            android:textColor="#FF4622"
+            android:textSize="@dimen/textSize_16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/details_account_purchase"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

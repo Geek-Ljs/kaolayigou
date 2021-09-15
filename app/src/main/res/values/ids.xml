@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="email_login_Verification_code" type="id"></item>
+    <item name="email_login_password" type="id"></item>
+    <item name="email_login_btn" type="id"></item>
+    <item name="email_login_password_login" type="id"></item>
+    <item name="email_login_other_login" type="id"></item>
+    <item name="email_login_other_login_ways" type="id"></item>
+    <item name="email_login_wechat_login" type="id"></item>
+    <item name="email_login_alipay_login" type="id"></item>
+    <item name="email_login_jump_to_register" type="id"></item>
+    <item name="cart_text" type="id"></item>
+</resources>

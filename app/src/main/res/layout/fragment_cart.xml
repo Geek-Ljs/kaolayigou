@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayish"
+    tools:context=".ui.fragment.cart.CartFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cart_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        app:contentInsetStart="18dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/cart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="#222222"
+                android:textSize="@dimen/textSize_22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="18dp"
+                android:text="管理"
+                android:textColor="#222222"
+                android:textSize="@dimen/textSize_16sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bottom_fun"
+        android:layout_below="@+id/cart_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_fun"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="56dp">
+
+        <CheckBox
+            android:id="@+id/allselect_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            style="@style/CustomCheckBoxTheme"
+            android:gravity="center"
+
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/mAllTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6C6C6C"
+                android:text="全选"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@id/allselect_checkbox"
+                app:layout_constraintTop_toTopOf="@id/allselect_checkbox"
+                app:layout_constraintBottom_toBottomOf="@id/allselect_checkbox"/>
+
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计:"
+            android:textColor="#222222"
+            android:layout_marginRight="8dp"
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintRight_toLeftOf="@id/moneyTextView1"
+            app:layout_constraintTop_toTopOf="@+id/moneyTextView1"
+            app:layout_constraintBottom_toBottomOf="@id/moneyTextView1" />
+        <TextView
+            android:id="@+id/moneyTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:text="¥"
+            android:textColor="#FF002A"
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintRight_toLeftOf="@id/total_money_text"
+            app:layout_constraintTop_toTopOf="@+id/total_money_text"
+            app:layout_constraintBottom_toBottomOf="@id/total_money_text"/>
+
+        <TextView
+            android:id="@+id/total_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="0"
+            android:textColor="#FF002A"
+            android:textSize="@dimen/textSize_14sp"
+            app:layout_constraintRight_toLeftOf="@id/submitButton"
+            app:layout_constraintTop_toTopOf="@+id/submitButton"
+            app:layout_constraintBottom_toBottomOf="@id/submitButton"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="@dimen/space_96dp"
+            android:layout_height="@dimen/space_42dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/rounded_total_btn"
+            android:stateListAnimator="@null"
+            android:text="结算"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+         />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
